@@ -1,5 +1,4 @@
-from hidden.secret import *
-#from config.secret import *
+from config.secret import *
 
 # ccloud config
 config = {
