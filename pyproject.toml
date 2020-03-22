@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "protobuf-ksql"
+version = "0.1.0"
+description = "ksqldb protocol buffer demo"
+authors = ["Galen Simmons"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+fastapi = "^0.52.0"
+confluent-kafka = "^1.3.0"
+
+[tool.poetry.dev-dependencies]
+locustio = "^0.14.5" # required to run the loadtest
+
+[build-system]
+requires = ["poetry>=1.0"]
+build-backend = "poetry.masonry.api"
