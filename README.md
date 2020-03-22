@@ -12,7 +12,6 @@ The demo exposes a single `http/1.1` endpoint, `/produce`, which is called to pr
 - Add your cluster credentials to the `config/secret.py` file
 - Add your cluster credentials to the `docker-compose.yml` file
 - Ensure that you have created an empty kafka topic on your cluster called `proto_item`
-- Change the 
 
 ## Running the demo
 - To install the project dependencies, install [poetry](https://python-poetry.org/) and run `poetry install`.
