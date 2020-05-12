@@ -1,5 +1,3 @@
-import uuid
-import json
 from locust import HttpLocust, TaskSet, between, task
 
 headers = {'Content-Type': 'application/json'}
@@ -11,18 +9,16 @@ class UserBehavior(TaskSet):
         return self.client.get("/", name="/", **kwargs)
 
     @task(weight = 1)
-    def ping(self, **kwargs):
-        return self.client.get("/ping", name="/", **kwargs)
+    def produce_json(self, **kwargs):
+        return self.client.get("/produce_json", name="/produce_json", **kwargs)
 
     @task(weight = 1)
-    def post_items(self, **kwargs):
-        payload = json.dumps({"name": str(uuid.uuid4())})
-        return self.client.post("/items", headers=headers, data=payload, **kwargs)
+    def produce_avro(self, **kwargs):
+        return self.client.get("/produce_avro", name="/produce_avro", **kwargs)
 
-    @task(weight = 1)
-    def get_protobuf(self, **kwargs):
-        payload = json.dumps({"name": str(uuid.uuid4())})
-        return self.client.get("/protobuf", headers=headers, data=payload, **kwargs)
+    # @task(weight = 1)
+    # def produce(self, **kwargs):
+    #     return self.client.get("/produce_protobuf", name="/produce_protobuf", **kwargs)
 
 
 class User(HttpLocust):

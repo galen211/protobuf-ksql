@@ -1,9 +1,0 @@
-syntax = "proto3";
-
-package ksql.item;
-
-message ProtobufItem {
-  string id = 1;
-  string item = 2;
-  int32 count = 3;
-}

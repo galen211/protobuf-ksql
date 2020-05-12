@@ -1,3 +1,5 @@
 hidden
 .idea
 src/__pycache__
+data
+proto
