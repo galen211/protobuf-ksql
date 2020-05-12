@@ -4,7 +4,9 @@ This demo extends Matt Howlett's blog post [**Integrating Apache Kafka With Pyth
 # About the Demo
 This demo posits a common problem faced by financial institutions processing millions of daily payments:
 
-How can various payment initiation systems be integrated into a centralized anti-fraud engine that can capture details about each payment, perform anti-fraud checks, and surface a queue of payments requiring manual inspection to an end-user interface?
+
+*How can various payment initiation systems be integrated into a centralized anti-fraud engine that can capture details about each payment, perform anti-fraud checks, and surface a queue of payments requiring manual inspection to an end-user interface?*
+
 
 Given the variety of payment types, having a validated schema for each type of payment event is an important safeguard for companies that need to evolve their payments infrastructure to become more agile and loosely coupled through microservices.
 
