@@ -5,3 +5,6 @@ data
 proto
 poetry.lock
 run.sh
+ksql
+*.pyc
+*.pyo
