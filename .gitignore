@@ -3,3 +3,5 @@ hidden
 src/__pycache__
 data
 proto
+poetry.lock
+run.sh
